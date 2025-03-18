@@ -29,7 +29,6 @@ import {
 } from "@/components/ui/table"
 // import { format } from 'date-fns'
 import { ModeToggle } from '@/components/mode-toggle'
-import { LoginCard } from "@/components/login"
 
 
 import axios from 'axios'
@@ -139,9 +138,6 @@ export default function PlaygroundHistory() {
 
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      {!isAuthenticated ? (
-        <LoginCard handleLogin={handleLogin} />
-      ) : (
         <SidebarProvider defaultOpen={true}>
           <AppSidebar onTeamSelect={handleTeamSelect} />
           {(() => {
