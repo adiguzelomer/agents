@@ -23,7 +23,7 @@ import { Button } from "@/components/ui/button"
 
 import { AgentsSetup } from '@/components/agents-setup';
 import { ModeToggle } from '@/components/mode-toggle'
-import { LoginCard } from "@/components/login";
+// import { LoginCard } from "@/components/login";
 
 
 import ag from '@/assets/ag.png';
