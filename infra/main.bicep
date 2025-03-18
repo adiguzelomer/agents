@@ -51,7 +51,7 @@ var prefix = 'dreamv2'
 resource rg 'Microsoft.Resources/resourceGroups@2022-09-01' = {
   name: 'rg-${environmentName}'
   location: location
-  tags: tags
+  tags: union(tags, { 'azd-service-name': 'frontend' })
 }
 
 module monitoring './shared/monitoring.bicep' = {

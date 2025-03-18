@@ -13,7 +13,7 @@ param appArtifactLocation string
 
 resource staticSite 'Microsoft.Web/staticSites@2022-03-01' = {
   name: name
-  tags: union(tags, {'azd-service-name':  'frontend' })
+  tags: union(tags, {'azd-service-name': 'frontend'})
   location: location
   sku: {
     name: 'Standard'
