@@ -23,6 +23,7 @@ import { Button } from "@/components/ui/button"
 
 import { AgentsSetup } from '@/components/agents-setup';
 import { ModeToggle } from '@/components/mode-toggle'
+import { LoginCard } from "@/components/login";
 
 
 import ag from '@/assets/ag.png';
@@ -229,6 +230,9 @@ export default function Agents() {
 
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+    {!isAuthenticated ? (
+      <LoginCard handleLogin={handleLogin} />
+    ) : (
     <SidebarProvider defaultOpen={true}>
       <AppSidebar onTeamSelect={handleTeamSelect} />
       <SidebarInset>
