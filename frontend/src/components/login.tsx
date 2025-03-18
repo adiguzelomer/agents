@@ -9,7 +9,7 @@ interface LoginCardProps {
 }
 
 export const LoginCard: React.FC<LoginCardProps> = ({ handleLogin }) => {
-  const [email] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const onSubmit = (e: React.FormEvent) => {
@@ -25,7 +25,7 @@ export const LoginCard: React.FC<LoginCardProps> = ({ handleLogin }) => {
         </CardHeader>
         <CardContent>
           <form className="space-y-4" onSubmit={onSubmit}>
-            {/* <div className="space-y-2">
+            <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <Input
                 id="email"
@@ -34,12 +34,13 @@ export const LoginCard: React.FC<LoginCardProps> = ({ handleLogin }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-            </div> */}
+            </div>
             <div className="space-y-2">
-              <Label htmlFor="password">Activation code</Label>
+              <Label htmlFor="password">Password</Label>
               <Input
                 id="password"
                 type="password"
+                placeholder="Enter your password"
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
