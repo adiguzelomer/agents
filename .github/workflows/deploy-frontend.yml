@@ -46,3 +46,5 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.FE_WEBAPP_TOKEN }}
           action: "close"
           app_location: "./frontend" # App source code path
+        env:
+          SKIP_DEPLOY_ON_MISSING_SECRETS: true
