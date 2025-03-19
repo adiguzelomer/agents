@@ -36,7 +36,7 @@ import { getAvatarSrc } from '@/components/agents-definition'
 const BASE_URL = import.meta.env.VITE_BASE_URL || "local";
 const ALLWAYS_LOGGED_IN =
   import.meta.env.VITE_ALLWAYS_LOGGED_IN === "true" ? true : false;
-const ACTIVATION_CODE = import.meta.env.VITE_ACTIVATON_CODE || "0000";
+const ACTIVATION_CODE = "0000";
 
 // console.log('VITE_BASE_URL:', BASE_URL);
 // console.log('VITE_ALLWAYS_LOGGED_IN:', ALLWAYS_LOGGED_IN);

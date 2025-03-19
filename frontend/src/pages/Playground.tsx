@@ -46,7 +46,7 @@ import { Footer } from "@/components/Footer";
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 const ALLWAYS_LOGGED_IN =
   import.meta.env.VITE_ALLWAYS_LOGGED_IN === "true" ? true : false;
-const ACTIVATION_CODE = import.meta.env.VITE_ACTIVATON_CODE;
+const ACTIVATION_CODE = "0000";
 
 console.log('BASE_URL:', BASE_URL);
 console.log('ALLWAYS_LOGGED_IN:', ALLWAYS_LOGGED_IN);

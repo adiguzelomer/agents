@@ -53,7 +53,7 @@ import { Footer } from '@/components/Footer'
 const BASE_URL = import.meta.env.VITE_BASE_URL || "https://autogen-demo-be2.whiteground-dbb1b0b8.eastus.azurecontainerapps.io";
 const ALLWAYS_LOGGED_IN =
   import.meta.env.VITE_ALLWAYS_LOGGED_IN === "true" ? true : false;
-const ACTIVATION_CODE = import.meta.env.VITE_ACTIVATON_CODE || "0000";
+const ACTIVATION_CODE = "0000";
 
 export default function PlaygroundHistory() {
   const [isAuthenticated, setIsAuthenticated] = useState(BASE_URL)
